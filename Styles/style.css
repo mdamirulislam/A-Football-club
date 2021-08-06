@@ -156,6 +156,120 @@ main {
 }
 
 /*-----------------------------*\
+         bonus 1 style
+\*-----------------------------*/
+table {
+    width: 100%;
+}
+
+.point-section {
+    margin: 100px 0;
+}
+
+.pints-table {
+    margin-bottom: 50px;
+}
+
+.pints-table h2 {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.835);
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr td {
+    font-size: 20px;
+    font-weight: 700;
+    color: #6C6C6C;
+}
+
+td {
+    border: 1px solid lightgray;
+    padding: 10px 65px;
+}
+
+tr:nth-child(2n) {
+    background-color: rgba(211, 211, 211, 0.171);
+}
+
+.all-point {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.all-point button {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 50px;
+    border: none;
+    color: rgba(0, 0, 0, 0.596);
+    border: 2px solid lightgray;
+    transition: 0.5s;
+}
+
+.all-point button:hover {
+    background-color: #E02C6D;
+    color: #fff;
+}
+
+/*-----------------------------*\
+         bonus 2 style
+\*-----------------------------*/
+.anounce {
+    text-align: center;
+}
+
+strong h1 {
+    font-size: 68px;
+}
+
+.next-content {
+    padding: 200px 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.637)url('https://i.ibb.co/hYrf39X/vs.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: 0 -350px;
+
+}
+
+.mext-match-info {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.mext-match-info h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.vs h1 {
+    margin-right: 80px;
+    font-size: 50px;
+    font-weight: 700;
+    align-items: center;
+    color: #fff;
+    border-bottom: 5px solid lightgray;
+}
+
+.match-detail {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.match-detail img {
+    margin-left: 20px;
+    width: 50%;
+}
+
+/*-----------------------------*\
          footer style
 \*-----------------------------*/
 .footer {
@@ -242,13 +356,33 @@ small {
     }
 
     .highlight-description {
-        width: 100%;
+        width: 80%;
 
     }
 
     .highlight-description h2 {
         font-size: 40px
     }
+
+    /* bonus 1 */
+    .pints-table {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    td {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .pints-table h2 {
+        font-size: 40px;
+    }
+
+    table tr td {
+        font-size: 14px;
+    }
+
 
     .icon i {
         font-size: 20px;
@@ -257,10 +391,32 @@ small {
     small {
         font-size: 10px;
     }
+
+    /* bonus 2 */
+    strong h1 {
+        font-size: 40px;
+    }
+
+    .match-detail img {
+        width: 80%;
+    }
+
+    .match-detail {
+        flex-direction: column;
+    }
+
+    .mext-match-info {
+        flex-direction: column;
+    }
+
+    .vs h1 {
+        text-align: center;
+        margin: 0;
+    }
 }
 
 /*-----------------------------*\
-         pad version
+        i pad/pad version
 \*-----------------------------*/
 
 @media only screen and (min-width: 689px) and (max-width: 991px) {
@@ -302,4 +458,42 @@ small {
     .highlight-description {
         text-align: start;
     }
+
+    /* bonus 1 */
+    td {
+        padding: 50px 15px;
+        text-align: center;
+    }
+
+    .pints-table h2 {
+        font-size: 45px;
+    }
+
+    .pints-table {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* bonus 2 */
+    strong h1 {
+        font-size: 60px;
+    }
+
+    .match-detail img {
+        width: 80%;
+    }
+
+    .match-detail {
+        flex-direction: column;
+    }
+
+    .mext-match-info {
+        flex-direction: column;
+    }
+
+    .vs h1 {
+        text-align: center;
+        margin: 0;
+    }
+
 }
